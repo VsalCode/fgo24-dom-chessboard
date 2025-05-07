@@ -9,6 +9,8 @@
 }
 
 body {
+  background-image: url('./papankayu.png');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +26,7 @@ body {
 /* BARIS GANJIL */
 .baris:nth-child(even) > div:nth-child(odd){ 
   border: 1.5px solid black;
+  background-color: white;
 }
 
 .baris:nth-child(even) > div:nth-child(even){
@@ -37,4 +40,5 @@ body {
 
 .baris:nth-child(odd) > div:nth-child(even){
   border: 1.5px solid black;
+  background-color: white;
 }
