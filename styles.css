@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.baris {
+  display: flex;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.baris > div {
+  height: 50px;
+  width: 50px;  
+}
+
+/* BARIS GANJIL */
+.baris:nth-child(even) > div:nth-child(odd){ 
+  border: 1.5px solid black;
+}
+
+.baris:nth-child(even) > div:nth-child(even){
+  background-color: black;
+}
+
+/* BARIS GANJIL */
+.baris:nth-child(odd) > div:nth-child(odd){
+  background-color: black;
+}
+
+.baris:nth-child(odd) > div:nth-child(even){
+  border: 1.5px solid black;
+}
